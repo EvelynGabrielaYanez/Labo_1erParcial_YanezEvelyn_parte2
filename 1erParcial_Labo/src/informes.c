@@ -764,14 +764,20 @@ int informarElectrodomesticosSinRep(eElectrodomesticos* listaElectrodomesticos, 
 						vBanderaHayReparacion=1;
 						break;
 					}
+
 				}
-				if(vBanderaHayReparacion==0 && vBanderaHayElectrodomestico==0){
-					printf("+------------+------------+--------------------------+--------------------------+\n");
-					printf("|    ID      |   SERIE    |          MODELO          |    DESCRIPCION MARCA     |\n");
-					printf("+------------+------------+--------------------------+--------------------------+\n");
+				if(vBanderaHayReparacion==0 ){
+					if(vBanderaHayElectrodomestico==0)
+					{
+						printf("+------------+------------+--------------------------+--------------------------+\n");
+						printf("|    ID      |   SERIE    |          MODELO          |    DESCRIPCION MARCA     |\n");
+						printf("+------------+------------+--------------------------+--------------------------+\n");
+						vBanderaHayElectrodomestico=1;
+					}
 				imprimirElectrodomestico(i, listaElectrodomesticos, largoElectrodomesticos, listaMarca, largoMarca);
-				vBanderaHayElectrodomestico=1;
 				}
+
+
 			}
 		}
 		vRetorno=0;
