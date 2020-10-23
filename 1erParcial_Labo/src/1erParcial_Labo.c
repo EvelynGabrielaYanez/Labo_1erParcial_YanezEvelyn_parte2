@@ -42,8 +42,8 @@ int main(void) {
 
 
 
-		vContadorIdElectrodomestico+= hardcodearElectrodomesticos(listaElectrodomesticos,ELECTRODOMESTICOS, 10);
-		vContadorIdReparacion+= hardcodearReparaciones(listaReparaciones, REPARACIONES, 10);
+		//vContadorIdElectrodomestico+= hardcodearElectrodomesticos(listaElectrodomesticos,ELECTRODOMESTICOS, 10);
+		//vContadorIdReparacion+= hardcodearReparaciones(listaReparaciones, REPARACIONES, 10);
 
 		do {
 			switch (menu()) {
